@@ -1,0 +1,10 @@
+<h1>dinesh works!</h1>
+<input type="text" [(ngModel)]="fname">
+<input type="text" name="" id="">
+<button class="btn btn-primary" (click)="clickme()"> clickme</button>
+<p *ngIf="eleselected; else noserver">This is my script{{fname}}</p>
+<!-- <p>This is not main</p> -->
+<p>{{fname}}</p>
+<ng-template #noserver>
+    <p>no server created!</p>
+</ng-template>
